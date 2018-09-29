@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26330",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/assets\/css\/font-awesome.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -479,6 +486,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/sass\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/sass\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -651,7 +668,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 557280987,
-	"displayValue": "TempWeb",
+	"displayValue": "IPLab",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_teal"
 	},

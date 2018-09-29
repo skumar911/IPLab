@@ -1,18 +1,17 @@
 document.writeln("<h1>Javascript BuiltIn Objects</h1>")
-document.writeln("<br><h3>Variables Declarations</h3>")
-document.writeln("<br>Hello Friends.....");
+document.writeln("<h3>Variables Declarations</h3>")
 document.writeln("<br>")
-var name = 'Samdharsi';
+var firstName = 'Samdharsi';
 document.writeln("<br>")
-document.writeln(name);
+document.writeln(firstName);
 
 var lastName = 'Kumar';
 document.writeln("<br>")
 document.writeln(lastName);
 
-var age = 26;
+var age1 = 20;
 document.writeln("<br>")
-document.writeln(age);
+document.writeln(age1);
 
 var fullAge = true;
 document.writeln("<br>")
@@ -22,14 +21,14 @@ document.writeln("<br><h3>Mathematical Operations with variables</h3>")
 var now = 2018;
 var age = prompt('Enter your age');
 var birthYear = now - age;
-// 2017 - 28 = 1989
+// 2018 - 20 = 1998
 
 document.writeln('<br>Your Birth year is '+ birthYear);
 
 var ageShridhar = 28;
 var ageSuresh = 28;
 
-ageShridhar = ageSurseh = (3 + 5) * 4 - 4;
+ageShridhar = ageSuresh = (3 + 5) * 4 - 4;
 // ageShridhar = ageSuresh= 28;
 
 ageShridhar++;
@@ -123,7 +122,7 @@ var names = [
   'Suresh',
   'Ramesh',
   'Kiran',
-  'Sudhir',
+  'Sudhir'
 ];
 
 document.writeln('Display Array')
@@ -142,7 +141,7 @@ document.writeln("<li>"+ num + " X " + i + " = " + num*i)
 document.writeln("</ul>")
 
 document.writeln("<br><h3>Break Demo</h3>")
-for (var i = 0; i <= 5; i++)
+for (i = 0; i <= 5; i++)
 {
   document.writeln("<br>"+i);
   if (i === 3)
@@ -152,7 +151,7 @@ for (var i = 0; i <= 5; i++)
 }
 
 document.writeln("<br><h3>continue Demo</h3>")
-for (var i = 0; i <= 5; i++)
+for (i = 0; i <= 5; i++)
 {
   if (i === 3)
   {
@@ -177,7 +176,7 @@ var e=x.getMonth();
 var f=x.getYear();
 var g=x.getSeconds();
 var h=x.getMinutes();
-var i=x.getHours();
+var i1=x.getHours();
 document.writeln("<br>Date:"+a);
 document.writeln("<br>Time:"+b);
 document.writeln("<br>Time Zone:"+c);
@@ -186,4 +185,4 @@ document.writeln("<br>Month:"+e);
 document.writeln("<br>Year:"+f);
 document.writeln("<br>Seconds:"+g);
 document.writeln("<br>Minutes:"+h);
-document.writeln("<br>Hours:"+i);
+document.writeln("<br>Hours:"+i1);
