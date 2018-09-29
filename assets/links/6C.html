@@ -1,0 +1,111 @@
+<html>
+<head>
+  <!-- Include Google Maps Javascript Library -->
+  <script type="text/javascript" src="http://maps.google.com/maps?file=api&v=1& key=
+  ABQIAAAA01HpWF7mf2aW91RNaGDc7xTfGML3OZxtDDthfq-aZ1uFtrk9MRS_VWEizymnfki_h89lqU7A0ts2PA">
+</script>
+
+<script type="text/javascript">
+function load()
+{
+  if (GBrowserIsCompatible())
+  {
+    // create map component in div with the id = "map"
+    var map = new GMap2(document.getElementById("map"));
+    // create map components components
+    map.addControl(new GSmallMapControl());
+    map.addControl(new GMapTypeControl());
+    // create center point when map is displayed
+    map.setCenter(new GLatLng(19.2045, 72.8376), 13);
+    map.openInfoWindow(map.getCenter(),
+    "<b>Your Company Here</b>");
+    // re-open the info balloon if they close it
+    var point = new GLatLng(19.2045, 72.8376);
+    map.addOverlay(createMarker(point, 1));
+  }
+}
+
+function createMarker(point, number)
+{
+  var marker = new GMarker(point);
+  // create clickable point with title for address
+  GEvent.addListener(marker, "click", function()
+  {
+    marker.openInfoWindowHtml("<b>Your Company Here</b>");
+  });
+  return marker;
+}
+
+function retrieveExternalData()
+{
+  var script = document.createElement("script");
+  <!-- script.src ='http://www.example.com/mashups/someservice'; -->
+  script.src ='http://www.samplewebi.esy.es/AddUpdateDeleteSearch/index.php';
+  script.type = 'text/javascript';
+  document.body.appendChild(script);
+}
+
+</script>
+</head>
+<body onload="load()">
+
+  <!-- Element to Contain a Google Map -->
+  <div id="map"
+  style="border-style:ridge; position: absolute;
+  left: 220px; top: 10px; width:400px; height:300px">
+</div>
+
+<!-- div to hold calendar-->
+<div id="calendar"
+style="border-style:ridge; position: absolute;
+left: 630px; top: 10px; width:400px; height:300px">
+<iframe src="https://www.google.com/calendar/embed?+src=o78s3eqe3ov403cpuav2bje5ja9j1tp2@+import.calendar.google.com&ctz=Asia/Calcutta"
+style="border: 0" width="400" height="300" frameborder="0" scrolling="no">
+</iframe>
+</div>
+
+<!-- div to hold Map Direction -->
+<div id="MapDirection"
+style="border-style:ridge; position: absolute;
+left: 220px; top: 320px; width:810px; height:620px">
+<iframe src="http://gmaps-samples.googlecode.com/svn/trunk/gdirections/directions-static.html"
+style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+</iframe>
+</div>
+
+<!-- div to hold the Twitter counter chicklet -->
+<div id="chicklet"
+style="border-style:ridge; position: absolute;
+left: 1040px; top: 10px; width:200px; height:40px">
+<a href="http://twittercounter.com/?username=Cristiano"
+title="TwitterCounter for @Cristiano"><img src="http://twittercounter.com/counter/?username=Cristiano"
+width="88"
+height="26"
+style="border:none;"
+alt="TwitterCounter for @Cristiano" /></a>
+</div>
+
+<!-- div to hold twitter feed -->
+<div id="ufbadge"
+style="border-style:ridge; position: absolute;
+left: 1040px; top: 60px; width:200px; height:880px">
+<script src="http://pipes.yahoo.com/js/listbadge.js">
+{"pipe_id":"dq0Qhuqp3BG1psChjtzu1g",
+"_btype":"list",
+"pipe_params":{
+  "urlRSS":"http:\/\/twitter.com\/statuses\/user_timeline\/10852552.rss"},
+  "width":"190",
+  "height":"870"}
+  </script>
+</div>
+
+<!-- div to hold local RSS feed -->
+<div id="localfeed"
+style="border-style:ridge; position: absolute;
+left: 10px; top: 950px; width:1210px; height:200px">
+<script src="http://localhost:8080/mashups/js/rssbadge.js">
+{"urlRSS":"http:\/\/localhost:8080\/mashups\/services\/feeds\/zurn.rss"}
+</script>
+</div>
+</body>
+</html>
