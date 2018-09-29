@@ -1,0 +1,222 @@
+<head>
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  // Create gradient
+  var grd = ctx.createLinearGradient(0,0,200,0);
+  grd.addColorStop(0,"red");
+  grd.addColorStop(1,"white");
+  // Fill with gradient
+  ctx.fillStyle = grd;
+  ctx.fillRect(10,10,150,80);
+  </script>
+
+  <script type="text/javascript">
+  if( localStorage.hits ){
+    localStorage.hits = Number(localStorage.hits) +1;
+  }else{
+    localStorage.hits = 1;
+  }
+  document.write("Total Hits :" + localStorage.hits );
+  </script>
+
+  <script type="text/javascript" src="http://maps.google.com/maps/api/
+  js?sensor=false"></script>
+
+  <script type="text/javascript">
+
+  var x=document.getElementById("mapp");
+  function getLocation()
+  {
+    if (navigator.geolocation)
+    {
+      navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+    else
+    {
+      x.innerHTML="Geolocation is not supported by this browser.";
+    }
+  }
+
+  function showPosition(position)
+  {
+    lat=position.coords.latitude;
+    lon=position.coords.longitude;
+    latlon=new google.maps.LatLng(lat, lon)
+    display=document.getElementById('display')
+    display.style.height='250px';
+    display.style.width='525px';
+    var myOptions={
+      center:latlon,zoom:14,
+      mapTypeId:google.maps.MapTypeId.ROADMAP,
+      mapTypeControl:false,
+      navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}};
+
+      var map=new google.maps.Map(document.getElementById("display"),myOptions);
+      var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    }
+    function showError(error)
+    {
+      switch(error.code)
+      {
+        case error.PERMISSION_DENIED:
+        x.innerHTML="User denied the request for Geolocation."
+        break;
+        case error.POSITION_UNAVAILABLE:
+        x.innerHTML="Location information is unavailable."
+        break;
+        case error.TIMEOUT:
+        x.innerHTML="The request to get user location timed out."
+        break;
+        case error.UNKNOWN_ERROR:
+        x.innerHTML="An unknown error occurred."
+        break;
+      }
+    }
+
+    </script>
+
+    <style type="text/css">
+    svg {
+      border: 1px solid black;
+    }
+    </style>
+
+  </head>
+
+  <h1>SVG Demo</h1>
+
+<svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3"
+  fill="red"/>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg width="300" height="200">
+  <line x1="50" y1="50" x2="250" y2="150" style="stroke:yellow;
+  stroke-width:10;" />
+</svg>
+
+<svg width="300" height="200">
+  <rect x="50" y="50" width="200" height="100" style="fill:orange;
+  stroke:black; stroke-width:3;" />
+</svg>
+
+<svg width="400" height="180">
+  <rect x="50" y="20" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;opacity:0.5">
+    Sorry, your browser does not support inline SVG.
+  </svg>
+
+  <h1>Canvas Demo</h1>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+    <h1>Data List Demo</h1>
+    <h4>Select The City:</h4><input list="City">
+    <datalist id="City">
+      <option value="Mumbai">
+        <option value="Delhi">
+          <option value="Banglore">
+          </datalist>
+          <input type="submit" value="submit"/>
+
+          <h1>Meter Demo</h1>
+          <p>Maths score is:
+            <meter value="93"
+            min="0" max="100" low="50" high="90"
+            optimum="100">A+</meter>  93%
+          </p>
+
+          <p>Phy score is:
+            <meter value="43"
+            min="0" max="100" low="50" high="90"
+            optimum="100">C</meter>  43%
+          </p>
+
+          <p>Chem score is:  <meter value="69"
+            min="0" max="100" low="50" high="90"
+            optimum="100">B+</meter>  69%
+          </p>
+
+
+          0.5 of 4<meter value=0.5 min=0 max=4 low=1 high=3>0.5 of 4</meter>
+          <br>
+          1.5 of 4<meter value=1.5 min=0 max=4 low=1 high=3>1.5 of 4</meter>
+          <br>
+          2.5 of 4<meter value=2.5 min=0 max=4 low=1 high=3>2.5 of 4</meter>
+          <br>
+          3.0 of 4<meter value=3 min=0 max=4 low=1 high=3>3  of 4</meter>
+          <br>
+          4.0 of 4<meter value=4 min=0 max=4 low=1 high=3>4 of 4</meter>
+          <br>
+          Grade: <meter value=61 min=0 max=100
+          low=73 high=87 optimum=100>D-</meter>
+
+          <h1>ProgressBar Demo</h1>
+          ProgressBar     <progress>
+            <span id="dwnl_progress">28%</span>
+          </progress>
+
+          <br>
+
+          50% Completed<progress max="100" value="50">
+            <span id="dwnl_progress">50%</span>
+          </progress>
+
+          <br>
+
+          30% Completed<progress max="100" value="30">
+            <span id="dwnl_progress">30%</span>
+          </progress>
+
+          <br>
+
+          20% Completed<progress max="100" value="20">
+            <span id="dwnl_progress">20%</span>
+          </progress>
+
+          <br>
+
+          10% Completed<progress max="100" value="10">
+            <span id="dwnl_progress">10%</span>
+          </progress>
+
+          <h1>Summary Demo</h1>
+          <details>
+            <summary>Course 1-Web Programming</summary>
+            Course Duration: 4 Months
+            Course Credit: 4 Credits
+            Course Faculty: Mr. XYZ
+          </details>
+        </br>
+        <details>
+          <summary>Course 2-Database Technology</summary>
+          Course Duration: 3 Months
+          Course Credit: 2 Credits
+          Course Faculty: Mr. PQR
+        </details>
+      </br>
+      <details>
+        <summary>Course 3-Embedded Systems</summary>
+        Course Duration: 3 Months
+        Course Credit: 4 Credits
+        Course Faculty: Mr. RST
+      </details>
+      <h1>figcaption Demo</h1>
+      <p>
+        The figcaption tag is used to give caption to a figure or a legend. This tag is used along with the figure tag.
+      </p>
+      <figure>
+        <img src="/../../images/bmw.jpg" alt="bmw" width="250px" height="180px">
+        <img src="/../../images/chevrolet.jpg" alt="chevrolet" width="250px" height="180px">
+        <img src="/../../images/jaguar.jpg" alt="jaguar" width="250px" height="180px">
+        <figcaption>Some international cars. From left to right, BMW, Chevrolet and Jaguar. </figcaption>
+      </figure>
+
+      <h1>localStorage Demo</h1>
+
+      <p>Refresh the page to increase number of hits.</p>
+      <p>Close the window and open it again and check the result.</p>
+
+  <h1>Geolocation Demo</h1>
+  <p id="mapp">Click on the button to see your current location. <button onclick="getLocation();">Location</button> </p>
+  <div id="display"></div>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2B-II</title>
+</head>
+<script type="text/javascript">
+
+function pageLoaded() {
+  alert("Page is loaded");
+}
+
+function sayHello() {
+  alert("Hello World")
+}
+
+function over() {
+  document.getElementById("inside").innerHTML="Mouse Over";
+}
+
+function out() {
+  document.getElementById("outside").innerHTML="Mouse Out";
+}
+function validate() {
+  if(document.login.userName.value=="" && document.login.password.value==""){
+    alert ("Please enter Valid Username and Password")
+  }
+  else if(document.login.userName.value==""){
+    alert ("Please enter User Name")
+  }
+  else if(document.login.password.value==""){
+    alert ("Please enter Password")
+  }
+  else if(document.login.userName.value=="demo" && document.login.password.value=="demo"){
+    window.open("welcome1.html");
+  }
+  else{
+    alert ("Please enter Valid Username and Password")
+  }
+}
+</script>
+</head>
+
+<body onload="pageLoaded()">
+  <h2>Hello World!</h2>
+
+  <p>Click the following button and see result</p>
+  <form>
+    <input type="button" onclick="sayHello()"
+    value="Say Hello" />
+  </form>
+  <p>Bring your mouse inside the division to see the result:</p>
+  <div onmouseover="over()">
+    <h2> This is Inside the div </h2>
+    <p id=inside></p>
+  </div>
+  <div onmouseout="out()">
+    <h2> This is Outside the div </h2>
+    <p id=outside></p>
+  </div>
+
+  <form method="POST" name="login" onsubmit="validate()">
+    <input type="text" size="20" placeholder="User Name" name="userName">
+    <input type="password" size="20" placeholder="Password" name="password">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

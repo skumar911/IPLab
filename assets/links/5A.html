@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Layout Using CSS Media Queries</title>
+<style type="text/css">
+.column {
+    width: 48%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: #97ddff;
+    float: left;
+}
+.container .column:first-child{
+    margin-right: 4%;
+}
+@media screen and (max-width: 767px){
+    .column {
+        width: 100%;
+        padding: 5px 20px;
+        float: none;
+    }
+    .container .column:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.container .column:nth-child(2){
+    margin-right: 4%;
+}
+@media screen and (max-width: 767px){
+    .column {
+        width: 100%;
+        padding: 5px 20px;
+        float: none;
+    }
+    .container .column:nth-child(2){
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+    /* Smartphones (portrait and landscape) ---------- */
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body{
+			background: #7ce7e1;
+		}
+    }
+    /* Smartphones (portrait) ---------- */
+    @media screen and (max-width: 320px){
+        body{
+			background: #ffd280;
+		}
+    }
+    /* Smartphones (landscape) ---------- */
+    @media screen and (min-width: 321px){
+        body{
+			background: #9ddfbb;
+		}
+    }
+    /* tablets, iPads (portrait and landscape) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body{
+			background: #ffb497;
+		}
+    }
+    /* tablets, iPads (portrait) ---------- */
+    @media screen and (min-width: 768px){
+        body{
+			background: #f0e68c;
+		}
+    }
+    /* tablets, iPads (landscape) ---------- */
+    @media screen and (min-width: 1024px){
+        body{
+			background: #d6b3f4;
+		}
+    }
+    /* Desktops and laptops ---------- */
+    @media screen and (min-width: 1224px){
+        body{
+			background: #d8ff9d;
+		}
+    }
+    /* Large screens ---------- */
+    @media screen and (min-width: 1824px){
+        body{
+			background: #ffc0cb;
+		}
+    }
+    .container1 {
+    	margin: 0 auto;
+        background: #ceceff;
+        box-sizing: border-box;
+    }
+    /* Mobile phones (portrait and landscape) ---------- */
+    @media screen and (max-width: 767px){
+        .container1 {
+            width: 100%;
+            padding: 5px 10px;
+        }
+    }
+    /* Tablets and iPads (portrait and landscape) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .container1 {
+            width: 750px;
+            padding: 5px 10px;
+        }
+    }
+    /* Low resolution desktops and laptops ---------- */
+    @media screen and (min-width: 1024px) {
+        .container1 {
+            width: 980px;
+            padding: 5px 15px;
+        }
+    }
+    /* High resolution desktops and laptops ---------- */
+    @media screen and (min-width: 1280px) {
+        .container1 {
+            width: 1200px;
+            padding: 5px 20px;
+        }
+    }
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+            <p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces. The President of India is the Supreme Commander of the Indian Army,[6] and it is commanded by the Chief of Army Staff (COAS), who is a four-star general. Two officers have been conferred with the rank of field marshal, a five-star rank, which is a ceremonial position of great honour. The Indian Army originated from the armies of the East India Company, which eventually became the British Indian Army, and the armies of the princely states, which finally became the national army after independence. The units and regiments of the Indian Army have diverse histories and have participated in a number of battles and campaigns across the world, earning a large number of battle and theatre honours before and after Independence.[7]
+		</p></div>
+		<div class="column">
+            <p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces. The President of India is the Supreme Commander of the Indian Army,[6] and it is commanded by the Chief of Army Staff (COAS), who is a four-star general. Two officers have been conferred with the rank of field marshal, a five-star rank, which is a ceremonial position of great honour. The Indian Army originated from the armies of the East India Company, which eventually became the British Indian Army, and the armies of the princely states, which finally became the national army after independence. The units and regiments of the Indian Army have diverse histories and have participated in a number of battles and campaigns across the world, earning a large number of battle and theatre honours before and after Independence.[7]
+		</p></div>
+	</div>
+  <!-- <div class="container1">
+		<p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces. The President of India is the Supreme Commander of the Indian Army,[6] and it is commanded by the Chief of Army Staff (COAS), who is a four-star general. Two officers have been conferred with the rank of field marshal, a five-star rank, which is a ceremonial position of great honour. The Indian Army originated from the armies of the East India Company, which eventually became the British Indian Army, and the armies of the princely states, which finally became the national army after independence. The units and regiments of the Indian Army have diverse histories and have participated in a number of battles and campaigns across the world, earning a large number of battle and theatre honours before and after Independence.[7]
+		</p></div> -->
+</body>
+</html>

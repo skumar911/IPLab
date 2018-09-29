@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2B-I</title>
+</head>
+
+  <script type="text/javascript" >
+  function showcommentform() {
+    var data="<br>Name: <input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea><br><input type='submit' value='Post Comment'>";
+    document.getElementById('form').innerHTML=data;
+  }
+
+  function showhovercommentform() {
+    var data="Name: <input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea><br><input type='submit' value='Comment'>";
+
+    document.getElementById('hoverform1').innerHTML=data;
+  }
+
+  function validate() {
+    var msg;
+    if(document.strengthCheck.userPass.value.length>=6){
+      msg="Good";
+    }
+    else if((document.strengthCheck.userPass.value.length)>=3 && (document.strengthCheck.userPass.value.length)<6){
+      {
+        msg="Moderate";
+      }
+    }
+    else{
+      msg="Poor";
+    }
+    document.getElementById("mylocation").innerText=msg;
+  }
+
+  function getInnerText()
+  {
+    alert(document.getElementById("innerTxt").innerText)
+  }
+  function setInnerText() {
+    var data="The textContent property is not supported in Internet Explorer 8 and earlier, and the innerText property is not supported in IE9 and earlier";
+    document.getElementById("sampleTxt").innerHTML=data;
+  }
+
+  function getcube(){
+    var number=document.getElementById("number").value;
+    alert(number*number*number);
+  }
+
+  function getsquare(){
+    var number=document.getElementById("xyz").value;
+    alert(number*number);
+  }
+
+  function CheckGenderClick()
+  {
+    var checkgender = document.getElementsByName('Gender');
+    var ischecked = false;
+    for ( var i = 0; i < checkgender.length; i++)
+    {
+      if(checkgender[i].checked)
+      {
+        ischecked = true;
+        var checkedValue = checkgender[i].value;
+        alert("You Have Selected "+checkedValue);
+        break;
+      }
+    }
+    if(!ischecked)
+    {
+      //if not checked
+      alert("Please choose any one option");
+    }
+  }
+
+  function CheckMinorClick()
+  {
+    var checkminor = document.getElementsByName('Age');
+    var ischecked = false;
+    for ( var i = 0; i < checkminor.length; i++)
+    {
+      if(checkminor[i].checked)
+      {
+        ischecked = true;
+        var checkedValue = checkminor[i].value;
+        alert("You Have Selected "+checkedValue);
+        break;
+      }
+    }
+    if(!ischecked)
+    {
+      //if not checked
+      alert("Please choose any one option");
+    }}
+</script>
+
+<body>
+
+    <h3>Get comment box by clicking the button below</h3>
+    <form name="myForm">
+      <input type="button" value="Comment" onclick="showcommentform()">
+      <div id="form"></div>
+    </form><hr>
+
+    <form name="hoverForm">
+      <div id="hoverform"  onmouseover="showhovercommentform()"><h3>Hover here to see comment form</h3></div>
+      <div id="hoverform1"></div>
+    </form>
+
+    <hr><h3>Check the strength of your password</h3>
+    <form name="strengthCheck">
+      <input type="password" value="" name="userPass" onkeyup="validate()">
+      <p style="display:inline">Strength:</p>
+      <p id="mylocation" style="display:inline"><b> No Strength</b></p>
+    </form><hr>
+
+    <h3>Square and Cube</h3>
+    <form>
+      Enter No: <input type="text" id="xyz" name="xyz">
+      <input type="button" value="Square" onclick="getsquare()"><br><br>
+      Enter No: <input type="text" id="number" name="number">
+      <input type="button" value="Cube" onclick="getcube()">
+    </form><hr>
+
+    <form>
+      <h3>Select Gender</h3>
+      Male<input type="radio" name="Gender" value="Male"><br>
+      Female<input type="radio" name="Gender" value="Female"><br>
+      <input type="button" onclick="CheckGenderClick()" value="Gender Check"><br><br>
+      >18:<input type="checkbox" name="Age" value="Major"></br>
+      <18:<input type="checkbox" name="Age" value="Minor"></br>
+      <input type="button" onclick="CheckMinorClick()" value="Minor Check">
+    </form><hr>
+
+    <h3>innerText Property</h3>
+    <p id="innerTxt">The innerText property sets or returns the text content of the specified node</p>
+    <p id="sampleTxt">Sample Text </p>
+    <button onclick="getInnerText()">Get innerText</button>
+    <button onclick="setInnerText()">Set innerText</button><hr>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Transformation Effect</title>
+  <style type="text/css">
+  .rotate {
+    -webkit-transform: rotate(30deg);  /* Chrome, Safari, Opera */
+    -moz-transform: rotate(30deg);  /* Firefox */
+    -ms-transform: rotate(30deg);  /* IE 9 */
+    transform: rotate(30deg);  /* Modern Browsers */
+  }
+
+  .scale {
+    -webkit-transform: scale(0.5);  /* Chrome, Safari, Opera */
+    -moz-transform: scale(0.5);  /* Firefox */
+    -ms-transform: scale(0.5);  /* IE 9 */
+    transform: scale(0.5);  /* Modern Browsers */
+    opacity: 0.5;
+  }
+
+  .skew{
+    -webkit-transform: skew(20deg, 20deg);  /* Chrome, Safari, Opera */
+    -moz-transform: skew(20deg, 20deg);  /* Firefox */
+    -ms-transform: skew(20deg, 20deg);  /* IE 9 */
+    transform: skew(20deg, 20deg);  /* Modern Browsers */
+  }
+
+  .translate{
+    -webkit-transform: translate(200px);  /* Chrome, Safari, Opera */
+    -moz-transform: translate(200px);  /* Firefox */
+    -ms-transform: translate(200px);  /* IE 9 */
+    transform: translate(200px);  /* Standard syntax */
+  }
+
+  table,th,td{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+  th{
+    font-size: 35px;
+  }
+  td{
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+    <tr>
+      <td><img src="/../../images/snail.png"></td>
+      <td><b>Rotate: 30deg</b><img src="/../../images/snail.png" class="rotate"></td>
+    </tr>
+    <tr>
+      <td><img src="/../../images/star-fish.png"></td>
+      <td><b>Skew(20deg, 20deg)</b><img src="/../../images/star-fish.png" class="skew"></td>
+    </tr>
+    <tr>
+      <td><img src="/../../images/octopus.png"></td>
+      <td><b>Scale: 0.5</b><img src="/../../images/octopus.png" class="scale"></td>
+    </tr>
+    <tr>
+      <td><img src="/../../images/mushroom.png"></td>
+      <td><b>Translated: 200px</b><img src="/../../images/mushroom.png" class="transform"></td>
+    </tr>
+
+  </table>
+</body>
+</html>

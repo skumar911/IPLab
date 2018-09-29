@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  p.one {
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  p.two {
+    border-style: dotted;
+    border-width: medium;
+  }
+
+  p.three {
+    border-style: groove;
+    border-width: 2px;
+  }
+
+  p.four {
+    border-style: dashed;
+    border-width: thick;
+  }
+
+  p.five {
+    border-style: double;
+    border-width: 15px;
+  }
+
+  p.six {
+    border-style: ridge;
+    border-width: thick;
+  }
+
+  p.seven {
+    border-style: inset;
+    border-width: thick;
+  }
+  p.eight {
+    border-style: outset;
+    border-width: thick;
+  }
+
+  p.nine {
+    border-style: dotted solid double dashed;
+    border-width: thick;
+  }
+  p.ten {
+    border-style: dotted solid;
+    border-width: thick;
+  }
+  #example1 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+  }
+
+  #example2 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+  }
+
+  #example3 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px red;
+  }
+  #example4 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  #example5 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+  }
+
+  #example6 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px red;
+  }
+  #example7 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  }
+
+  #example8 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  }
+  #example9 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px inset;
+  }
+
+  #example10 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 20px red inset;
+  }
+
+  #example11 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 20px blue outset;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(Sansation_Light.ttf);
+  }
+
+  *{
+    font-family: myFirstFont;
+  }
+
+  #p1 {
+    font-size:22px;
+    text-shadow: 2px 2px;
+  }
+  #p2 {
+    font-size:22px;
+    text-shadow: 2px 2px red;
+  }
+  #p3 {
+    font-size:22px;
+    text-shadow: 2px 2px 5px red;
+  }
+  #p4 {
+    font-size:22px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  #p5 {
+    font-size:22px;
+    text-shadow: 0 0 3px #FF0000;
+  }
+  #p6 {
+    font-size:22px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+
+  #p7 {
+    font-size:22px;
+
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+  #p8 {
+    font-size:22px;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #Example_A {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius-bottomright: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  #Example_B {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius-bottomright: 50px 25px;
+    border-bottom-right-radius: 50px 25px;
+  }
+  #Example_C {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius-bottomright: 25px 50px;
+    border-bottom-right-radius: 25px 50px;
+  }
+  #Example_D {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius: 1em 4em 1em 4em;
+    border-radius: 1em 4em 1em 4em;
+  }
+  #Example_E {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius: 25px 10px / 10px 25px;
+    border-radius: 25px 10px / 10px 25px;
+  }
+  #Example_F {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+  }
+  .Example1{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border: 4px solid green;
+    border-radius: 25px;
+    background-color: #FFCC00;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .Example1:hover {
+    background: #ff7b29;
+    border-radius: 50px;
+    border: 8px groove lime;
+  }
+
+  .Example2{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border: 2px dotted pink;
+    border-radius: 12px;
+    background-color: #FF0000;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .Example2:hover {
+    background: #a1a1a1;
+    border-radius: 44px;
+    border: 8px solid aqua;
+  }
+
+  .Example3{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border: 2px double Yellow;
+    border-radius: 1em 4em 1em 4em;
+    background-color: #FF00FF;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .Example3:hover {
+    background: #ff7b29;
+    border-radius: 50px;
+    border: 8px ridge #0000FF;
+  }
+
+  .Example4{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border: 8px groove lime;
+    border-radius: 100px;
+    background-color: #00FF00;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .Example4:hover {
+    background: #ff7b29;
+    border-radius: 10px;
+    border: 8px double #dddddd;
+  }
+
+  .Example5{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 300px;
+    border: 10px ridge #00FFFF;
+    border-radius: 45px 10px / 28px 25px;
+    background-color: #0000FF;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .Example5:hover {
+    background: #0000FF;
+    border-radius: 75px;
+    border: 8px dotted #dddddd;
+  }
+
+  #myDIV {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    50% {border-width: 50px;
+      border-color: blue;}
+    }
+
+    @keyframes mymove {
+      50% {border-width: 50px;border-color: blue;}
+    }
+  </style>
+</head>
+<body>
+
+  <h2>The border-width Property</h2>
+  <p>This property specifies the width of the four borders:</p>
+
+  <p class="one">Solid Border.</p>
+  <p class="two">Dotted Border.</p>
+  <p class="three">Groove Border.</p>
+  <p class="four">Dashed Border.</p>
+  <p class="five">Double Border.</p>
+  <p class="six">Ridge Border.</p>
+  <p class="seven">Inset Border.</p>
+  <p class="eight">Outset Border.</p>
+  <p class="nine">dotted solid double dashed Border.</p>
+  <p class="ten">dotted solid Border.</p>
+
+  <p><b>Note:</b> The "border-width" property does not work if it is used alone.
+    Always specify the "border-style" property to set the borders first.</p>
+    <h1>The box-shadow Property</h1>
+    <p>The box-shadow property defines the shadow of an element:</p>
+
+    <h2>box-shadow: 5px 10px:</h2>
+    <div id="example1">
+      <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px #888888:</h2>
+    <div id="example2">
+      <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px red:</h2>
+    <div id="example3">
+      <p>A red shadow.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 8px #888888:</h2>
+    <div id="example4">
+      <p>The optional third value adds a blur effect to the shadow.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 18px #888888:</h2>
+    <div id="example5">
+      <p>More blurred.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 18px red:</h2>
+    <div id="example6">
+      <p>More blurred and red.</p>
+    </div>
+
+    <h2>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</h2>
+    <div id="example7">
+      <p>Define multiple shadows.</p>
+    </div>
+
+    <h2>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</h2>
+    <div id="example8">
+      <p>Define multiple shadows with blur effect.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px inset:</h2>
+    <div id="example9">
+      <p>The inset keyword changes the shadow to one inside the frame.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 20px red inset:</h2>
+    <div id="example10">
+      <p>Inset, red and blur.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 20px blue outset:</h2>
+    <div id="example11">
+      <p>Outset, blue and blur.</p>
+    </div>
+
+    <h1>The @font-face Rule</h1>
+
+    <div>
+      With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+    <p id="p1">Text-shadow effect</p>
+    <p id="p2">Text-color with shadow effect</p>
+    <p id="p3">Text-blur effect to the shadow effect</p>
+    <p id="p4">Text-white text with black shadow effect</p>
+    <p id="p5">Text-neon glow shadow effect</p>
+    <p id="p6">Text-Multiple Shadows effect</p>
+    <p id="p7">Text-Mwhite text with black, blue, and darkblue shadow effect</p>
+    <p id="p8">Text-plain border around some text without Shadows effect</p>
+
+    <div ID="Example_A">box 1</div>
+    <div ID="Example_B">box 2</div>
+    <div ID="Example_C">box 3</div>
+    <div ID="Example_D">box 4</div>
+    <div ID="Example_E">box 5</div>
+    <div ID="Example_F">box 6</div>
+    <div style="clear: left;"></div>
+
+    <div Class="Example1">Border-radius property demo1.</div>
+  </br>
+  <div Class="Example2">Border-radius property demo2.</div>
+</br>
+<div Class="Example3">Border-radius property demo3.</div>
+</br>
+<div Class="Example4">Border-radius property demo4.</div>
+</br>
+<div Class="Example5">Border-radius property demo5.</div>
+</br>
+<h1>Animation of border-width</h1>
+
+<p>Gradually change the border-width property from 1px to 15px, then back:<p>
+  <div id="myDIV"></div>
+
+  <p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
