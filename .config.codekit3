@@ -16,6 +16,20 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/assets\/AJAX\/ajax_info.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/AJAX\/ajax_info.txt",
+		"oF": 0
+		},
+	"\/assets\/AJAX\/books.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/AJAX\/books.xml",
+		"oF": 0
+		},
 	"\/assets\/css\/font-awesome.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -79,6 +93,46 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/css\/responsiveform.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/responsiveform-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/responsiveform1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/responsiveform1-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/responsiveform2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/responsiveform2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/responsiveform3.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/responsiveform3-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -133,6 +187,16 @@
 		"oA": 0,
 		"oAP": "\/assets\/fonts\/FontAwesome.otf",
 		"oF": 0
+		},
+	"\/assets\/js\/2A-I-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/2A-I-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/js\/2A-I.js": {
 		"ft": 64,
@@ -214,6 +278,29 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/JSON\/booksinfo.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/JSON\/booksinfo-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/JSON\/JsonSchema.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/JSON\/JsonSchema-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/JSON\/xmldata.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/JSON\/xmldata.xml",
+		"oF": 0
+		},
 	"\/assets\/links\/2A-I.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -284,6 +371,27 @@
 		"oAP": "\/assets\/links\/5B.html",
 		"oF": 0
 		},
+	"\/assets\/links\/6A.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/links\/6A.html",
+		"oF": 0
+		},
+	"\/assets\/links\/6B.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/links\/6B.html",
+		"oF": 0
+		},
+	"\/assets\/links\/6C.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/links\/6C.html",
+		"oF": 0
+		},
 	"\/assets\/links\/Demo1.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -332,46 +440,6 @@
 		"oA": 0,
 		"oAP": "\/assets\/links\/no-sidebar.html",
 		"oF": 0
-		},
-	"\/assets\/links\/responsiveform.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/links\/responsiveform-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/links\/responsiveform1.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/links\/responsiveform1-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/links\/responsiveform2.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/links\/responsiveform2-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/links\/responsiveform3.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/links\/responsiveform3-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/assets\/links\/right-sidebar.html": {
 		"cB": 0,
