@@ -6,3 +6,5 @@ _notes/
 /node_modules/
 /build
 .DS_Store
+.config.codekit3
+*.codekit3
