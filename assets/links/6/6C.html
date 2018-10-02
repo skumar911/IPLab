@@ -1,0 +1,111 @@
+
+
+<html>
+<title>Mashup</title>
+<head>
+  <style type="text/css">
+  body{
+    background-color: #FFFFFF;
+
+  }
+  div{
+    border: 0px;
+    //background-color: #EB7A61;
+  }
+  iframe{
+    border: 0px;
+  }
+  </style>
+  <!-- Include Google Maps Javascript Library -->
+  <script type="text/javascript" src="http://maps.google.com/maps?file=api&v=1& key=
+  ABQIAAAA01HpWF7mf2aW91RNaGDc7xTfGML3OZxtDDthfq-aZ1uFtrk9MRS_VWEizymnfki_h89lqU7A0ts2PA">
+</script>
+
+<script type="text/javascript">
+function load()
+{
+  if (GBrowserIsCompatible())
+  {
+    // create map component in div with the id = "map"
+    var map = new GMap2(document.getElementById("map"));
+    // create map components components
+    map.addControl(new GSmallMapControl());
+    map.addControl(new GMapTypeControl());
+    // create center point when map is displayed
+    map.setCenter(new GLatLng(19.2045, 72.8376), 13);
+    map.openInfoWindow(map.getCenter(),
+    "<b>Your Company Here</b>");
+    // re-open the info balloon if they close it
+    var point = new GLatLng(19.2045, 72.8376);
+    map.addOverlay(createMarker(point, 1));
+  }
+}
+
+function createMarker(point, number)
+{
+  var marker = new GMarker(point);
+  // create clickable point with title for address
+  GEvent.addListener(marker, "click", function()
+  {
+    marker.openInfoWindowHtml("<b>Your Company Here</b>");
+  });
+  return marker;
+}
+
+function retrieveExternalData()
+{
+  var script = document.createElement("script");
+  <!-- script.src ='http://www.example.com/mashups/someservice'; -->
+  script.src ='http://www.samplewebi.esy.es/AddUpdateDeleteSearch/index.php';
+  script.type = 'text/javascript';
+  document.body.appendChild(script);
+}
+
+</script>
+</head>
+<body  onload="load()">
+
+
+  <!-- Element to Contain a Google Map -->
+  <div id="map"
+  style="border-style:ridge; position: absolute;
+  left: 150px; top: 200px; width:400px; height:300px">
+</div>
+
+<!-- div to hold calendar-->
+<div id="calendar" style="border-style:ridge; position: absolute; left: 660px; top: 200px; width:400px; height:300px">
+  <iframe src="https://www.google.com/calendar/embed?+src=o78s3eqe3ov403cpuav2bje5ja9j1tp2@+import.calendar.google.com&ctz=Asia/Calcutta" width="400" height="300" >
+</iframe>
+
+</div>
+
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/19d0872d88/mumbai/" data-label_1="MUMBAI" data-theme="original" >MUMBAI</a>
+<script>
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b92c4b83325893e"></script>
+<div class="addthis_inline_share_toolbox"  style="border-style:ridge; position: absolute;
+left: 450px; top: 130px; width:600px; height:100px"></div>
+
+<div id="168"
+style="border-style:ridge; position: absolute;
+left: 155px; top: 550px; width:500px; height:500px"><script type="text/javascript" src="//100widgets.com/js_data.php?id=168" > </script>
+
+<div id="162"
+style="border-style:ridge; position: absolute;
+left: 250px; top: 10px; width:6200px; height:300px"><script type="text/javascript" src="//100widgets.com/js_data.php?id=162"></script>
+
+<div id="204"
+style="border-style:ridge; position: absolute;
+left: 240px; top: 10px; width:600px; height:300px"><!-- Begin horoscope -->
+<script src="https://www.albinoblacksheep.com/horoscope/embed.js?colorscheme=2"></script><noscript><a href="https://www.albinoblacksheep.com/horoscope/">Daily Horoscopes</a></noscript>
+<!-- End horoscope -->
+</div>
+
+</body>
+</html>
