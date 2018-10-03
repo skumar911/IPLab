@@ -16,13 +16,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
-	"\/assets\/AJAX\/ajax_info.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/AJAX\/ajax_info.txt",
-		"oF": 0
-		},
 	"\/assets\/AJAX\/books.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -47,13 +40,13 @@
 		"oAP": "\/build\/assets\/css\/images\/bg01.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/css\/images\/bg02.png": {
 		"ft": 32768,
-		"iS": 2178,
+		"iS": 1096,
 		"oA": 0,
 		"oAP": "\/build\/assets\/css\/images\/bg02.png",
 		"oF": 0,
@@ -64,12 +57,12 @@
 		},
 	"\/assets\/css\/images\/bg03.png": {
 		"ft": 32768,
-		"iS": 2396,
+		"iS": 1423,
 		"oA": 0,
 		"oAP": "\/build\/assets\/css\/images\/bg03.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -78,7 +71,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/assets\/css\/main-min-min.css",
 		"oF": 0,
 		"oS": 3
@@ -167,20 +160,6 @@
 		"oAP": "\/build\/assets\/fonts\/fontawesome-webfont.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/fontawesome-webfont.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/fonts\/fontawesome-webfont.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/fontawesome-webfont.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/fonts\/fontawesome-webfont.woff2",
-		"oF": 0
-		},
 	"\/assets\/fonts\/FontAwesome.otf": {
 		"cB": 0,
 		"ft": 8192,
@@ -192,7 +171,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/assets\/js\/2A-I-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -252,7 +231,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/assets\/js\/main-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -309,55 +288,6 @@
 		"oAP": "\/build\/assets\/JSON\/xmldata.xml",
 		"oF": 0
 		},
-	"\/assets\/links\/2\/2A-I.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/2A-I.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/2A-II.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/2A-II.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/2B-I.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/2B-I.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/2B-II.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/2B-II.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/2C.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/2C.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/welcome1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/welcome1.html",
-		"oF": 0
-		},
-	"\/assets\/links\/2\/welcome2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/2\/welcome2.html",
-		"oF": 0
-		},
 	"\/assets\/links\/3\/3.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -372,34 +302,6 @@
 		"oAP": "\/build\/assets\/links\/4\/4B.html",
 		"oF": 0
 		},
-	"\/assets\/links\/4\/4C.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/4\/4C.html",
-		"oF": 0
-		},
-	"\/assets\/links\/5\/5A.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/5\/5A.html",
-		"oF": 0
-		},
-	"\/assets\/links\/5\/5B.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/5\/5B.html",
-		"oF": 0
-		},
-	"\/assets\/links\/6\/6A.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/6\/6A.html",
-		"oF": 0
-		},
 	"\/assets\/links\/6\/6B.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -407,46 +309,18 @@
 		"oAP": "\/build\/assets\/links\/6\/6B.html",
 		"oF": 0
 		},
-	"\/assets\/links\/6\/6C.html": {
+	"\/assets\/links\/7\/7A old.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/assets\/links\/6\/6C.html",
+		"oAP": "\/build\/assets\/links\/7\/7A old.php",
 		"oF": 0
 		},
-	"\/assets\/links\/7\/7A.html": {
+	"\/assets\/links\/7\/7A.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/assets\/links\/7\/7A.html",
-		"oF": 0
-		},
-	"\/assets\/links\/7\/calc.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/7\/calc.php",
-		"oF": 0
-		},
-	"\/assets\/links\/demo\/Demo1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/demo\/Demo1.html",
-		"oF": 0
-		},
-	"\/assets\/links\/demo\/Demo2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/demo\/Demo2.html",
-		"oF": 0
-		},
-	"\/assets\/links\/demo\/Demo3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/links\/demo\/Demo3.html",
+		"oAP": "\/build\/assets\/links\/7\/7A.php",
 		"oF": 0
 		},
 	"\/assets\/links\/demo\/Demo4.html": {
@@ -553,7 +427,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/assets\/sass\/main-min.css",
 		"oF": 0,
 		"oS": 3
@@ -571,6 +445,12 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/images\/banner.jpg": {
 		"ft": 16384,
 		"iS": 60891,
@@ -578,22 +458,12 @@
 		"oAP": "\/build\/images\/banner.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/images\/bmw.jpg": {
-		"ft": 16384,
-		"iS": 6433,
-		"oA": 0,
-		"oAP": "\/build\/images\/bmw.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/chevrolet.jpg": {
 		"ft": 16384,
-		"iS": 36881,
+		"iS": 34137,
 		"oA": 0,
 		"oAP": "\/build\/images\/chevrolet.jpg",
 		"oF": 0,
@@ -611,35 +481,25 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/images\/Mumbai.jpeg": {
-		"ft": 16384,
-		"iS": 197197,
-		"oA": 0,
-		"oAP": "\/build\/images\/Mumbai.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/images\/mushroom.png": {
 		"ft": 32768,
-		"iS": 10624,
+		"iS": 6960,
 		"oA": 0,
 		"oAP": "\/build\/images\/mushroom.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/images\/octopus.png": {
 		"ft": 32768,
-		"iS": 5418,
+		"iS": 4613,
 		"oA": 0,
 		"oAP": "\/build\/images\/octopus.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -660,7 +520,7 @@
 		"oAP": "\/build\/images\/pic02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/pic03.jpg": {
@@ -680,7 +540,7 @@
 		"oAP": "\/build\/images\/pic04.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/snail.png": {
@@ -696,18 +556,18 @@
 		},
 	"\/images\/star-fish.png": {
 		"ft": 32768,
-		"iS": 5793,
+		"iS": 4783,
 		"oA": 0,
 		"oAP": "\/build\/images\/star-fish.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/images\/tortoise.png": {
 		"ft": 32768,
-		"iS": 6664,
+		"iS": 6457,
 		"oA": 0,
 		"oAP": "\/build\/images\/tortoise.png",
 		"oF": 0,
@@ -715,13 +575,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/index.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -737,7 +590,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2128,7 +1981,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:9000",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 1,
 	"jsCheckerReservedNamesString": "",
