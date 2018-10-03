@@ -72,7 +72,7 @@ foreach ($_POST['nos'] as $value) {
             #fibo{
               border-style: solid;
               width:300px;
-              height:220px;
+              height:auto;
               margin-left: 10px;
               display: inline-flex;
               flex-direction: column;
