@@ -16,18 +16,18 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
+	"\/assets\/AJAX\/6B-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/assets\/AJAX\/6B-1.html",
+		"oF": 0
+		},
 	"\/assets\/AJAX\/ajax_info.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/assets\/AJAX\/ajax_info.txt",
-		"oF": 0
-		},
-	"\/assets\/AJAX\/books.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/assets\/AJAX\/books.xml",
 		"oF": 0
 		},
 	"\/assets\/css\/font-awesome.min.css": {
